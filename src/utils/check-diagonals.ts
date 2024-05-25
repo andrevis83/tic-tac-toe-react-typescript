@@ -10,9 +10,7 @@ export const checkDiagonals = (cells: CellValue[]) => {
 const checkDiagonal = (cells: CellValue[], isPrimaryDiag = false) => {
   const indexes = isPrimaryDiag ? [0, 4, 8] : [2, 4, 6];
 
-  const diagonal = cells.filter((cell, indexCell) =>
-    indexes.includes(indexCell)
-  );
+  const diagonal = cells.filter((_, indexCell) => indexes.includes(indexCell));
 
   const isValidDiag = diagonal.every((diagonal) => diagonal);
 
