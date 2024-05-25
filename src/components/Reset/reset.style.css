@@ -1,0 +1,20 @@
+.reset {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+
+  .reset__button {
+    all: unset;
+    min-width: 96px;
+    text-align: center;
+    padding-inline: 16px;
+    padding-block: 16px;
+    background: rgb(3, 9, 22);
+    background: linear-gradient(
+      90deg,
+      rgba(78, 75, 175, 1) 0%,
+      rgba(123, 119, 219, 1) 100%
+    );
+    border-radius: 32px;
+  }
+}
