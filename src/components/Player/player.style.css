@@ -22,19 +22,6 @@
     justify-content: center;
   }
 
-  .player__winner {
-    width: 24px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .player__winner-icon {
-      fill: #e7cb19;
-      animation: fadeSlideUp 0.5s;
-    }
-  }
-
   .player__symbol {
     font-size: 16px;
   }

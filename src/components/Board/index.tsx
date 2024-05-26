@@ -62,18 +62,8 @@ function Board() {
   return (
     <div className="paper">
       <Players>
-        <Player
-          isActive={activePlayer === 'A'}
-          isWin={isWin}
-          name="A"
-          symbol="X"
-        />
-        <Player
-          isActive={activePlayer === 'B'}
-          isWin={isWin}
-          name="B"
-          symbol="O"
-        />
+        <Player isActive={activePlayer === 'A'} name="A" cellIcon="X" />
+        <Player isActive={activePlayer === 'B'} name="B" cellIcon="O" />
       </Players>
       <div className="paper__board">
         {cells.map((cell, indexcCell) => (

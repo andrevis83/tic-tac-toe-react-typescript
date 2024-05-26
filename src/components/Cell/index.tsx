@@ -1,4 +1,5 @@
 import type { CellProps } from '@/types/Cell';
+import CellIcon from '@/components/CellIcon';
 import './cell.style.css';
 
 function Cell({ onClick, isWin, position, value }: CellProps) {
@@ -13,9 +14,7 @@ function Cell({ onClick, isWin, position, value }: CellProps) {
         disabled={Boolean(value) || isWin}
         onClick={() => handleClick(position)}
       >
-        {value && (
-          <span className="cell__icon">{value === 'A' ? 'X' : 'O'}</span>
-        )}
+        {value && <CellIcon symbol={value === 'A' ? 'X' : 'O'} />}
       </button>
     </div>
   );

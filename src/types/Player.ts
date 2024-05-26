@@ -1,8 +1,7 @@
-export type SymbolType = 'X' | 'O';
+import { CellIcon } from './CellIcon';
 
 export interface PlayerProps {
   isActive: boolean;
-  isWin: boolean;
   name: string;
-  symbol: SymbolType;
+  cellIcon: CellIcon;
 }
